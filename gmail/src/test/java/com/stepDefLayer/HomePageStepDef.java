@@ -48,7 +48,7 @@ public class HomePageStepDef extends BaseClass {
 	    
 		Assert.assertEquals(home.verifyLabel(),"Label2");
 		System.out.println(home.verifyLabel());
-		driver.close();
+		BaseClass.tearDown();
 		
 	}
 

@@ -34,7 +34,7 @@ public class BaseClass {
 	
 	public static void initialization()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Prashant\\Desktop\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\AllDrivers\\chromedriver.exe");
 	
 		ChromeOptions opt =new ChromeOptions();
 		opt.addArguments("--remote-allow-origins=*");
@@ -47,7 +47,6 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	
 		driver.get("https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&osid=1&passive=1209600&service=mail&ifkv=AQMjQ7To-M5OJyNremXg8KmqKWhpURYiuJDrvoSM3ZzCwO_VjA63vTwPZ40s1qrYJtD9JcR9scP4Lg&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
-	
 		
 	}
 	
