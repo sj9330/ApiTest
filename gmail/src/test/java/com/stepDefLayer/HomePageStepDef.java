@@ -47,6 +47,7 @@ public class HomePageStepDef extends BaseClass {
 	public void user_will_validate_the_lable_name() {
 	    
 		Assert.assertEquals(home.verifyLabel(),"Label2");
+		System.out.println(home.verifyLabel());
 		driver.close();
 		
 	}
